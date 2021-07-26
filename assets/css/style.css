@@ -18223,7 +18223,7 @@ header.navbar-sticky-on .navbar-brand .navbar-brand-item {
     left: 0;
     right: 0;
     top: 100%;
-    background: #fff;
+    background: #040404;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
   .navbar-expand-lg .navbar-collapse .navbar-nav .dropdown-toggle::after {
@@ -18271,7 +18271,7 @@ header.navbar-sticky-on .navbar-brand .navbar-brand-item {
     padding: 0;
   }
   .navbar-expand-lg .navbar-nav .nav-item > .dropdown-menu {
-    background: #f7f8f9;
+    background: white;
     padding: 20px 0px;
     margin: 10px 0;
   }
@@ -18571,7 +18571,7 @@ main {
 header {
   position: relative;
   z-index: 1020;
-  background: #fff;
+  background: #161616;
 }
 
 b,
