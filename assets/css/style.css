@@ -17948,7 +17948,7 @@ header.navbar-sticky-on {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #fff;
+  background-color: #040404;
   -webkit-animation: fadeInDown .5s;
           animation: fadeInDown .5s;
   width: 100%;
@@ -18010,7 +18010,7 @@ header.navbar-sticky-on .navbar-brand .navbar-brand-item {
 }
 
 .navbar-light .nav .nav-link {
-  color: rgba(0, 0, 0, 0.9);
+  color: rgb(255 255 255 / 90%);
 }
 
 .navbar-light .nav .nav-link:hover {
