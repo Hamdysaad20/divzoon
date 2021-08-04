@@ -2,7 +2,7 @@
 * Folio - Creative Agency Portfolio Theme
 *
 * @author Webestica (https://www.webestica.com/)
-* @version 1.2.1
+* @version 1.2.2
 **/
 
 
@@ -693,7 +693,7 @@ var e = {
     // START: 17 Active class
     activeClass: function () {
         var currentPath = window.location.pathname;
-        var path = currentPath.split("index.html").pop();
+        var path = currentPath.split("../index.html").pop();
 
         var d = e.select(".navbar-nav .dropdown");
         if(e.isVariableDefined(d)) {
@@ -807,3 +807,6 @@ e.init();
 // The following code snippet is not a part of a theme package. It is just used to display color switcher and RTL demo on our divzoon live preview site.
 
 /*****  START: COLOR SWITCHER AND RTL BUTTON SNIPPET  *****/
+
+
+/*****  END: COLOR SWITCHER AND RTL BUTTON SNIPPET  *****/
