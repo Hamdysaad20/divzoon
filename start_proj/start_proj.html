@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Divzoon Projects</title>
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="divzoon.com">
+	<meta name="description" content="website and app Builder service .">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&amp;family=Rubik:wght@400;500;700&amp;family=Spartan:wght@400;700;900&amp;display=swap" rel="stylesheet">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/tiny-slider/tiny-slider.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<style>
+	.haha{
+		    /*
+      All of the base styles have
+      moved to the “CSS” tab above.
+    */
+    transition: transform 250ms;
+	}
+	.haha:hover{
+		transform: translateY(-10px);
+
+	}
+	.opa{
+		opacity: 1;
+
+	}
+	.opa:hover{
+		opacity: 0.6;
+
+	}
+	.unselectable {
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+</style>
+</head>
+
+<body class="unselectable" >
+
+
+
+
+
+<!-- Search START -->
+<div class="search-full collapse bg-dark p-3 pb-lg-0" id="search-open">
+	<div class="container position-relative">
+		<h2 class="position-absolute start-0 bottom-0 mb-n5 display-1 text-white-stroke opacity-1">
+			<span class="d-block">Search</span>
+		</h2>
+		<div class="row vh-100">
+			<div class="d-flex flex-column my-auto py-5 w-100">
+				<!-- Search form START -->
+				<form class="form-dark form-line position-relative w-100">
+					<div class="mb-3 input-group-lg input-text-white-stroke mb-0">
+						<!-- Search input -->
+						<input class="form-control font-heading caret-primary mb-0 pe-6" type="text" name="search" placeholder="What are you looking for?">
+						<span class="focus-border"></span>
+					</div>
+					<!-- Search button -->
+					<button type="button" class="position-absolute end-0 top-0 btn pb-3 text-primary-hover h-100">
+						<i class="bi bi-search display-8"></i>
+					</button>
+				</form>
+				<!-- Search form END -->
+				<p class="small mt-2 mb-0">e.g. Template, Bootstrap, WordPress theme </p>
+			</div>
+
+			<!-- Search button close START -->
+			<a class="position-fixed top-0 end-0 m-3 m-md-5 btn btn-white btn-round zoom-hover" data-bs-toggle="collapse" href="javascript:void(0)" data-bs-target="#search-open" aria-expanded="true">
+				<i class="fas fa-times p-0"></i>
+			</a>
+			<!-- Search button close END -->
+		</div>
+	</div>
+</div>
+<!-- Search END -->
+
+<!-- Login Popup START -->
+<div class="modal fade" id="topbarlogin" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary pattern-overlay-7">
+				<div class="modal-title p-3 text-white-force">
+					<h5 class="mb-0">Sign in to your account!</h5>
+					<p class="mb-0">Nice to see you! Please log in with your account.</p>
+
+				</div>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+      <div class="modal-body">
+        <div class="w-100 p-3">
+					<!-- Form START -->
+					<form>
+						<!-- Email -->
+					  <div class="mb-3">
+					    <label class="form-label" for="exampleInputEmail1">Email address</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
+					  </div>
+					  <!-- Password -->
+					  <div class="mb-3">
+					    <label class="form-label" for="exampleInputPassword1">Password</label>
+					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*********">
+					  </div>
+					  <!-- Checkbox -->
+					  <div class="mb-3 form-check">
+					    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+					    <label class="form-check-label" for="exampleCheck1">keep me signed in</label>
+					  </div>
+						<!-- Button -->
+					  <div class="row align-items-center">
+							<div class="col-sm-4">
+								<button type="submit" class="btn btn-dark btn-line">Login</button>
+							</div>
+							<div class="col-sm-8 text-sm-end">
+								<span class="text-muted">for customers only! <a href="soon.html">Submit your project</a></span>
+							</div>
+						</div>
+					</form>
+					<!-- Form END -->
+				</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Login Popup END -->
+
+<!-- =======================
+Header START -->
+<header class="navbar-dark navbar-transparent navbar-sticky">
+
+	<!-- Navbar top START -->
+	<div class="navbar-top d-none d-lg-block">
+		<div class="container">
+			<div class="d-md-flex justify-content-between align-items-center">
+				<!-- Navbar top Left-->
+				<div class="d-flex align-items-center justify-content-center">
+					<!-- Top info -->
+					<ul class="nav justify-content-center justify-content-md-start">
+						<li class="nav-item me-3" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" title="friday CLOSED">
+							<span><i class="far fa-clock me-2"></i>Visit time: Thurs-Sat 9:00 AM-10:00 PM</span>
+						</li>
+						<li class="nav-item">
+							<a class="navbar-link" href="https://api.whatsapp.com/message/AHLC3ZALPQP7A1"><i class="fas fa-headset me-2"></i>Whatsapp only: (+20) 1017040213</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Navbar top Right-->
+				<div class="d-flex align-items-center justify-content-center">
+					<!-- Language -->
+					<div class="dropdown ms-3">
+					  <a class="dropdown-toggle" href="#" role="button" id="dropdownLanguage" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="fa-fw me-2" src="assets/images/flags/uk.svg" alt=""> English </a>
+					  <div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdownLanguage">
+					  	<span class="dropdown-item-text">Select language</span>
+					  	<div class="dropdown-divider"></div>
+						  <a class="dropdown-item" href="ar/index.html"><img class="fa-fw me-2" src="assets/images/flags/eg.svg" alt=""> Arabic </a>
+
+					  </div>
+					</div>
+
+					<!-- Top link -->
+					<ul class="nav ms-3">
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#topbarlogin"><i class="far fa-user me-2"></i>Login</a>
+            </li>
+          </ul>
+
+					<!-- Top social -->
+					<ul class="list-unstyled d-flex">
+						<li> <a class="px-2" href="#"><i class="fab fa-facebook-f"></i></a> </li>
+						<li> <a class="px-2" href="#"><i class="fab fa-instagram"></i></a> </li>
+						<li> <a class="ps-2" href="https://api.whatsapp.com/message/AHLC3ZALPQP7A1"><i class="fab fa-whatsapp"></i></a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Navbar top END -->
+
+	<!-- Logo Nav START -->
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+			<!-- Logo START -->
+			<a class="navbar-brand" href="http://divzoon.com/">
+				<!-- Logo SVG Code -->
+			<img src="assets\images\Untitled-1.png" alt="">
+				  
+				  
+			</a>
+			<!-- Logo END -->
+
+			<!-- Responsive navbar toggler -->
+			<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"> </span>
+		  </button>
+
+			<!-- Main Menu START -->
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav navbar-nav-scroll navbar-nav-scroll mx-auto">
+					
+					<!-- Menu item 1 Demos -->
+					<li class="nav-item dropdown">
+						<a href="http://divzoon.com/" class="nav-link">Home</a>
+						
+					
+							
+					
+					<!-- Menu item 2 Pages -->
+					<li class="nav-item dropdown">
+						<a href="soon.html" class="nav-link">Blog</a>
+					
+						
+							
+					
+					<!-- Menu item 3 Portfolio -->
+					<li class="nav-item dropdown dropdown-fullwidth">
+						<a href="soon.html" class="nav-link">Courses</a>
+
+
+					<!-- Menu item 4 Elements -->
+					<li class="nav-item dropdown dropdown-fullwidth">
+					
+						<a href="https://divzoon.com/about.html" class="nav-link">about</a>
+
+					<!-- Menu item 5 Docs-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="docMenu" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">Help</a>
+						<ul class="dropdown-menu pb-0 dropdown-menu-sm-end" data-bs-popper="none" data-bs-popper="none" aria-labelledby="docMenu">
+							<li> 
+								<a class="dropdown-item ps-4" href="https://divzoon.com/contact.html" target="_blank">
+									<div class="d-flex">
+										<i class="display-8 mt-n1 me-3 text-primary fa-fw bi bi-chat-right-text"></i>
+										<div>
+											<h6 class="my-0">Support<i class="fas fa-external-link-square-alt text-body ms-2"></i></h6>
+											<p class="small text-body d-none d-md-block mb-0">Contact us through our contact page</p>
+										</div>
+									</div>
+								</a> 
+							</li>
+							<li class="dropdown-divider"></li>
+							<li> 
+								<div class="dropdown-item ps-4">
+									<div class="d-flex mb-2">
+										<i class="display-8 mt-n1 me-3 text-primary fa-fw bi bi-book-half"></i>
+										<div>
+											<h6 class="my-0">Read terms</h6>
+											<p class="small text-body d-none d-md-block">General instruction about our offers and support</p>
+											<a class="dropdown-item px-0" href="privacy policy.html">privacy policy</a> 
+											<a class="dropdown-item px-0" href="soon.html">Directory structure</a> 
+											 
+										</div>
+									</div>
+								</div> 
+							</li>
+							<li class="bg-light pt-3"> 
+								<a class="dropdown-item ps-4" href="https://getbootstrap.com/docs" target="_blank">
+									<div class="d-flex">
+										<i class="display-8 mt-n2 me-3 text-primary fas fa-exclamation-circle"></i>
+										<div>
+											<h6 class="my-0">Report a problem<i class="fas fa-external-link-square-alt text-body ms-2"></i></h6>
+											<p class="small text-body d-none d-md-block">Report a technical issue</p>
+										</div>
+									</div>
+								</a> 
+							</li>
+						</ul>
+					</li>
+
+					<!-- Menu item 6 link-->
+					<li class="nav-item">	<a class="nav-link" href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<!-- Main Menu END -->
+
+			<!-- Nav right START -->
+			<div class="nav flex-nowrap align-items-center">
+				<!-- Nav Search Opener-->
+				<div class="nav-item">
+					<a class="nav-link ms-2" data-bs-toggle="collapse" href="javascript:void(0)" data-bs-target="#search-open">
+						<i class="bi bi-search display-9 "> </i>
+					</a>
+				</div>
+
+			
+			<!-- Nav right END -->
+		</div>
+	</nav>
+	<!-- Logo Nav END -->
+</header>
+<!-- =======================
+Header END -->
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main style="background-image:url(assets/images/bg/pattern/01.png! )!important;">
+
+<!-- =======================
+header im START -->
+<section style="z-index: index 100 !important;" class="bg-dark position-relative pattern-overlay-5 mx-xl-3 mx-xxxl-9 rounded">
+	
+</section>
+<!-- =======================
+header im END -->
+
+
+
+<!-- Title -->
+<div class="col-sm-8 mb-3 mx-auto text-center pt-7">
+	<h2  class="haha display-5 mb-5 text-dark-stroke" style="color: rgb(255, 255, 255); margin-bottom: 0px!important;" >Choose your project</h2>
+</div>
+<!-- =======================
+Steps START -->
+<section style="padding-top: 30px!important; padding-bottom: 30px!important;">
+	<div class="container">
+		<div class="row">
+<!--<from lift> Card style 1 -->
+<div class="haha col-md-6 col-lg-4 mb-6">
+	<div class="card border-0 rounded-0">
+		<!-- Card Image -->
+		<div class="card-image">
+			<!-- Card image -->
+			<img class="w-100" src="assets/images/start_proj/Screenshot 2021-08-13 163507.jpg" alt="card image">
+			<!-- Card image popup -->
+			<a class="card-element-hover position-absolute end-0 top-0 bg-primary p-3" href="#" data-glightbox data-gallery="portfolio"><i class="fas fa-expand text-white"></i></a>
+		</div>
+		<!-- Card body -->
+		<div class="card-body bg-primary p-3 p-md-4 p-xl-5">
+			<div class="mt-auto card-text">
+				<span class="display-9 font-alt fw-normal text-white mb-3 d-inline-block"> App Development</span>
+				<h4 class="text-white">Android & IOS  Apps</h4>
+				<p class="text-white mb-3 text-truncate">creating application for Mobile devices , so you can reach to the customers regularly by notifications.</p>
+				<a href="portfolio-detail-1.html" class="btn btn-dark btn-line">Show details</a>
+			</div>
+		</div>
+	</div>					
+</div>
+<!-- Card style 2 -->
+<div class="haha col-md-6 col-lg-4 mb-6">
+	<div class="card border-0 rounded-0">
+		<!-- Card Image -->
+		<div class="card-image">
+			<!-- Card image -->
+			<img class="w-100" src="assets/images/start_proj/Screenshot 2021-08-13 163646.jpg" alt="card image">
+			<!-- Card image popup -->
+			<a class="card-element-hover position-absolute end-0 top-0 bg-primary p-3" href="#" data-glightbox data-gallery="portfolio"><i class="fas fa-expand text-white"></i></a>
+		</div>
+		<!-- Card body -->
+		<div class="card-body bg-primary p-3 p-md-4 p-xl-5">
+			<div class="mt-auto card-text">
+				<span class="display-9 font-alt fw-normal text-white mb-3 d-inline-block">Video Editing</span>
+				<h4 class="text-white">Professional Video Editing</h4>
+				<p class="text-white mb-3 text-truncate">for commercial videos, music videos and for youtube videos .</p>
+				<a href="portfolio-detail-1.html" class="btn btn-dark btn-line">Show details</a>
+			</div>
+		</div>
+	</div>					
+</div>
+<!-- Card style 3 -->
+<div class="haha col-md-6 col-lg-4 mb-6">
+	<div class="card border-0 rounded-0">
+		<!-- Card Image -->
+		<div class="card-image">
+			<!-- Card image -->
+			<img class="w-100" src="assets/images/start_proj/Screenshot 2021-08-13 163557.jpg" alt="card image">
+			<!-- Card image popup -->
+			<a class="card-element-hover position-absolute end-0 top-0 bg-primary p-3" href="#" data-glightbox data-gallery="portfolio"><i class="fas fa-expand text-white"></i></a>
+		</div>
+		<!-- Card body -->
+		<div class="card-body bg-primary p-3 p-md-4 p-xl-5">
+			<div class="mt-auto card-text">
+				<span class="display-9 font-alt fw-normal text-white mb-3 d-inline-block">Web Development</span>
+				<h4 class="text-white">Sites For All Types</h4>
+				<p class="text-white mb-3 text-truncate">single products, Shops, Portfolio , fully automated sites</p>
+				<a href="portfolio-detail-1.html" class="btn btn-dark btn-line">Show details</a>
+			</div>
+		</div>
+	</div>					
+</div>
+		</div>
+	</div>
+</section>
+<!-- =======================
+Steps END -->
+
+
+
+<!-- =======================
+Action box START -->
+<section class="pt-0 position-relative">
+	<!-- Shape Decoration START -->
+	<figure class="position-absolute start-0 bottom-0 ms-n6 mb-n4 z-index-9 d-none d-lg-block">
+		<svg width="285" height="82" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 82">
+			<rect class="fill-primary" x="22.67" y="16.58" width="262.22" height="65.42"/>
+			<path d="m9.63 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0.01-4.82-2.15-4.82-4.81s2.16-4.81 4.81-4.81c2.66 0 4.82 2.15 4.82 4.81z"/>
+			<path d="m35.25 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z"/>
+			<path d="m60.88 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.15 4.81 4.81z"/>
+			<path d="m86.5 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.15 4.81 4.81z"/>
+			<path d="m112.12 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z"/>
+			<path d="m137.75 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.15 4.81 4.81z"/>
+			<path d="m163.37 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z"/>
+			<path d="m188.99 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z"/>
+			<path d="m214.62 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.15 4.81 4.81z"/>
+			<path d="m240.24 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z"/>
+			<path d="m9.63 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0.01-4.82-2.15-4.82-4.81s2.16-4.81 4.81-4.81c2.66 0 4.82 2.16 4.82 4.81z"/>
+			<path d="m35.25 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.16 4.81 4.81z"/>
+			<path d="m60.88 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.16 4.81 4.81z"/>
+			<path d="m86.5 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.16 4.81 4.81z"/>
+			<path d="m112.12 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.16 4.81 4.81z"/>
+			<path d="m137.75 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.16 4.81 4.81z"/>
+			<circle cx="158.56" cy="30.38" r="4.81"/>
+			<circle cx="184.18" cy="30.38" r="4.81"/>
+			<circle cx="209.8" cy="30.38" r="4.81"/>
+			<circle cx="235.43" cy="30.38" r="4.81"/>
+			<path d="m9.63 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.82-2.16-4.82-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66-0.01 4.82 2.15 4.82 4.81z"/>
+			<path d="m35.25 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66-0.01 4.81 2.15 4.81 4.81z"/>
+			<path d="m60.88 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.65-0.01 4.81 2.15 4.81 4.81z"/>
+			<path d="m86.5 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.65-0.01 4.81 2.15 4.81 4.81z"/>
+			<path d="m112.12 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66-0.01 4.81 2.15 4.81 4.81z"/>
+			<path d="m137.75 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.65-0.01 4.81 2.15 4.81 4.81z"/>
+			<circle cx="158.56" cy="55.94" r="4.81"/>
+			<circle cx="184.18" cy="55.94" r="4.81"/>
+			<circle cx="209.8" cy="55.94" r="4.81"/>
+			<circle cx="235.43" cy="55.94" r="4.81"/>
+		</svg>
+	</figure>
+	<!-- Shape Decoration END -->
+	<center>  	<div class="container">
+
+		<!-- Project Block -->
+		<div class="col-sm-6">
+			<div class="opa text-center bg-dark px-3 py-6 h-100">
+				<h2 class="mb-3 display-6 text-white">other type of Projects?</h2>
+				<a class="btn btn-line text-white mb-0" href="contact.html">Contact Us</a>
+			</div>
+		</div>
+	</div><!-- row END -->
+</div>
+</section>
+<!-- =======================
+Action box END --></center>
+
+
+
+
+
+
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- =======================
+Footer START -->
+<footer class="bg-dark footer-sticky pt-6">
+	<div class="container">
+		<div class="row"style=" text-align: center;">
+
+			<!-- Footer Widget 1 -->
+			<div class="col-md-6 col-lg-3 mb-5">
+			<img  src="assets\images\Untitled-1.png" alt="">
+			<p>The best solution for small business.</p>
+
+			</div>
+
+			<!-- Footer Widget 2 -->
+			<div class="col-md-6 col-lg-3 mb-5">
+				<h5 class="mb-4 text-white">Our offices</h5>
+				<!-- Address 1 -->
+				<h2 class="display-8 text-light-stroke">soon .</h2>
+
+			</div>
+
+			<!-- Footer Widget 3 -->
+			<div class="col-md-6 col-lg-3 mb-5">
+				<h5 class="mb-4 text-white">Useful links</h5>
+				<div class="row">
+					<div class="col-6">
+						<ul class="nav flex-column text-primary-hover">
+							<li class="nav-item"><a class="nav-link pt-0" href="#">Our Work</a></li>
+							<li class="nav-item"><a class="nav-link" href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqblhOUzFxVlB6a2FxYWlvcXVVdk5OQ2YzU0M5d3xBQ3Jtc0tuOGNuLTBNRzYtRm1tZU80S2ZraEpZenJJZHlXbXpCY1pGSXN6QnktajcyY3FUWDc3eEpPX0dGMVgzYjM0OTNMQ09JMFkwekdKdm9jWkE3RzZPVkRpcm9MaDh4bU01TFpwM01GXzVINnYwVmpKdmxiSQ&q=https%3A%2F%2Fbit.ly%2F2yRobvz">Hamdy's YT</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Market<span class="badge bg-danger ms-2">New</span></a></li>
+							<li class="nav-item"><a class="nav-link" href="https://divzoon.com/contact.html">Support</a></li>
+						</ul>
+					</div>
+					<div class="col-6">
+						<ul class="nav flex-column text-primary-hover">
+							<li class="nav-item"><a class="nav-link pt-0" href="https://divzoon.com/about.html">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Work</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">News<span class="badge bg-danger ms-2">New</span></a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer Widget 4 -->
+			<div class="col-md-6 col-lg-3 mb-5">
+				<h5 class="mb-4 text-white">Stay in touch</h5>
+				<form>
+					<label class="form-label">Subscribe to our newsletter to receive exclusive offers.</label>
+					<div class="mb-3">
+						<input class="form-control" type="email" placeholder="Enter email...">
+					</div>
+					<div class="mb-3">
+						<button type="submit" value="Subscribe" class="btn btn-primary mb-0">Join us</button>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	
+		<!-- Footer copyright START -->
+		<div class="row align-items-center justify-content-md-between py-4">
+			<div class="col-md-6">
+				<div class="text-center text-md-start">©2021 <a href="https://divzoon.com/" target="_blank">Divzoon</a>. All rights reserved
+				</div>
+			</div>
+			<div class="col-md-6">
+			  <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+		      <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="#">Terms</a></li>
+		      <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="privacy policy.html">Privacy</a></li>
+		      <li class="nav-item"><a class="nav-link text-body text-primary-hover pe-0" href="#">Cookies</a></li>
+			  </ul>
+			</div>
+		</div>
+		<!-- Footer copyright END -->
+	</div>
+</footer>
+<!-- =======================
+Footer END -->
+
+<!-- Custom cursor -->
+<div class="cursor-dot-outline"></div>
+<div class="cursor-dot"></div>
+
+<!-- Back to top -->
+<div class="back-top">
+	<div class="scroll-line"></div>
+	<span class="scoll-text">Go Up</span>
+</div>
+
+<!-- =======================
+JS libraries, plugins and custom scripts -->
+
+<!-- Bootstrap JS -->
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Vendors -->
+<script src="assets/vendor/jarallax/jarallax.min.js"></script>
+<script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
+
+<!-- Template Functions -->
+<script src="assets/js/functions.js"></script>
+
+
+</body>
+</html>

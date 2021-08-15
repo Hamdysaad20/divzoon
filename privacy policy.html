@@ -22,10 +22,38 @@
 
 	<!-- Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+	<style>
+		.haha{
+				/*
+		  All of the base styles have
+		  moved to the “CSS” tab above.
+		*/
+		transition: transform 250ms;
+		}
+		.haha:hover{
+			transform: translateY(-10px);
+	
+		}
+		.opa{
+			opacity: 1;
+	
+		}
+		.opa:hover{
+			opacity: 0.6;
+	
+		}
+		.unselectable {
+			-webkit-user-select: none;
+			-webkit-touch-callout: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			
+		  }
+	</style>
 </head>
 
-<body>
+<body class="unselectable">
 	
 
 <!-- Offcanvas end START -->
@@ -234,7 +262,7 @@ Inner intro START -->
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 mx-auto">
-				<h1 class="text-white-stroke display-6">Privacy Policy.
+				<h1 class="haha text-white-stroke display-6">Privacy Policy.
 				</h1>
 				<p>This is the Privacy Policy page of divzoon website .</p>
 			</div>
@@ -304,34 +332,34 @@ Blog START -->
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-<h3>1-Privacy Policy Page </h3>	
+<h3>Privacy Policy Page </h3>	
 
 <p >Divzoon, we understand that the privacy of your personal information is important to you and us.
 Below is information about the types of personal information we receive and collect when you visit Divzoon, and how we protect your personal information.</p>
 
-<h3>2-log files </h3>	
+<h3>log files </h3>	
 <p>  
 	As with most different websites, we collect and use the data in log files.
 	The information in log files includes your Internet Protocol (IP) address, your Internet service provider (ISP), the browser you used to visit our site, the time you visited, and the pages you visited through our site.
 	 </p>			
-<h3>3-Cookies </h3>
+<h3>Cookies </h3>
 <p>
 	We use cookies to give you the best possible experience on a simple website. For more information about cookies, visit: http://www.allaboutcookies.org/.
 	</p>				
-<h3>4-Essential cookies </h3>
+<h3>Essential cookies </h3>
 <p> 
 	Essential cookies are essential for you to navigate and navigate around the website, and they do not store any information that can be used for advertising purposes. Without essential cookies, our website will not function properly.
 	 </p>				
-<h3>5-Custom cookies</h3>
+<h3>Custom cookies</h3>
 <p> 
 	These cookies store information, such as your personal preferences, and use it to customize a unique experience for you.
 	This may include displaying a pop-up only once per visit, saving your language preferences, or allowing you to automatically sign in to some of our features.
 	 </p>				
-<h3>6-Analytics cookies </h3>
+<h3>Analytics cookies </h3>
 <p> Analytics cookies capture anonymous data so that we can see trends and improve your website experience.
 	These allow us to test different builds, and help us determine what breaks if part of our site isn't working.
 	 </p>				
-<h3>7-Advertising cookies </h3>	
+<h3>Advertising cookies </h3>	
 <p>
 	Some third party advertisers may use cookies or web beacons when advertising on our site.
 	These will send information to these advertisers (such as Google through the Google AdSense program) including your IP address, your Internet service provider, the browser you used to visit our site, and in some cases information about whether you've installed Flash.
@@ -390,7 +418,7 @@ Author info START -->
 				  <div>
 				    <div class="d-md-flex justify-content-between mb-2 mt-0 mt-md-3">
 				    	<h5 class="mb-0">Posted by <a href="#" class="text-primary">Hamdy Saad</a></h5>
-				    	<a href="#" class="btn btn-dark btn-xs">View author profile</a>
+				    	<a href="soon.html" class="btn btn-dark btn-xs">View author profile</a>
 				    </div>
 <p> CEO of Divzoon LLC and a Full Stack Web developer worked with large companies to grow there business and creating there  exist on the internet  </p>
 <p>and the creator of divzoon in 2016 .</p>			
@@ -425,20 +453,13 @@ Author info END -->
 Footer START -->
 <footer class="bg-dark footer-sticky pt-6">
 	<div class="container">
-		<div class="row">
+		<div class="row" style=" text-align: center;">
 
 			<!-- Footer Widget 1 -->
 			<div class="col-md-6 col-lg-3 mb-5">
 			<img  src="assets\images\Untitled-1.png" alt="">
 				<p>The best solution for small business.</p>
-				<div class="d-flex me-auto">
-					<h6 class="mt-2 me-4 text-white">Follow on:</h6>
-					<div class="list-group-inline list-unstyled text-primary-hover">
-						<a href="#" class="list-group-item text-white bg-transparent">Fb</a>
-						<a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqblhOUzFxVlB6a2FxYWlvcXVVdk5OQ2YzU0M5d3xBQ3Jtc0tuOGNuLTBNRzYtRm1tZU80S2ZraEpZenJJZHlXbXpCY1pGSXN6QnktajcyY3FUWDc3eEpPX0dGMVgzYjM0OTNMQ09JMFkwekdKdm9jWkE3RzZPVkRpcm9MaDh4bU01TFpwM01GXzVINnYwVmpKdmxiSQ&q=https%3A%2F%2Fbit.ly%2F2yRobvz" class="list-group-item text-white bg-transparent">Yt</a>
-						<a href="https://api.whatsapp.com/message/AHLC3ZALPQP7A1" class="list-group-item text-white bg-transparent">Wa</a>
-					</div>
-				</div>
+				
 			</div>
 
 			<!-- Footer Widget 2 -->
@@ -499,8 +520,8 @@ Footer START -->
 			<div class="col-md-6">
 			  <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
 		      <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="#">Terms</a></li>
-		      <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="#">Privacy</a></li>
-		      <li class="nav-item"><a class="nav-link text-body text-primary-hover pe-0" href="#">Cookies</a></li>
+		      <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="privacy policy.html">Privacy</a></li>
+		      <li class="nav-item"><a class="nav-link text-body text-primary-hover pe-0" href="Cookies.html">Cookies</a></li>
 			  </ul>
 			</div>
 		</div>

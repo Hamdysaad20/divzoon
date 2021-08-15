@@ -23,10 +23,38 @@
 
 	<!-- Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style-rtl.css">
-
+	<style>
+		.haha{
+				/*
+		  All of the base styles have
+		  moved to the “CSS” tab above.
+		*/
+		transition: transform 250ms;
+		}
+		.haha:hover{
+			transform: translateY(-10px);
+	
+		}
+		.opa{
+			opacity: 1;
+	
+		}
+		.opa:hover{
+			opacity: 0.6;
+	
+		}
+		.unselectable {
+			-webkit-user-select: none;
+			-webkit-touch-callout: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			
+		  }
+	</style>
 </head>
 
-<body>
+<body class="unselectable" >
 
 
 <!-- Offcanvas end START -->
@@ -523,7 +551,7 @@ Service START -->
 	<center> <div class="row d-flex justify-content-lg-end" >
 		<!-- Service Item 1-->
 		<div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
-			<h2 class="display-1 text-dark-stroke text-hover-fill text-primary-shadow">B</h2>
+			<h2 class="haha display-1 text-dark-stroke text-hover-fill text-primary-shadow">B</h2>
 			<h5 class="mb-4">Branding</h5>
 			<div class="list-group list-group-borderless list-unstyled">
 				<a href="#" class="list-group-item bg-transparent">Brand Identity</a>
@@ -535,7 +563,7 @@ Service START -->
 		</div>
 		<!-- Service Item 2-->
 		<div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
-			<h2 class="display-1 text-dark-stroke text-hover-fill text-primary-shadow">G</h2>
+			<h2 class="haha display-1 text-dark-stroke text-hover-fill text-primary-shadow">G</h2>
 			<h5 class="mb-4">Graphic Design</h5>
 			<div class="list-group list-group-borderless list-unstyled">
 				<a href="#" class="list-group-item bg-transparent">Creative Concepting</a>
@@ -547,7 +575,7 @@ Service START -->
 		</div>
 		<!-- Service Item 3-->
 		<div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
-			<h2 class="display-1 text-dark-stroke text-hover-fill text-primary-shadow">D</h2>
+			<h2 class=" haha display-1 text-dark-stroke text-hover-fill text-primary-shadow">D</h2>
 			<h5 class="mb-4">Development</h5>
 			<div class="list-group list-group-borderless list-unstyled">
 				<a href="#" class="list-group-item bg-transparent">Back-end Development</a>
@@ -583,25 +611,25 @@ Features START -->
 			<div class="col-md-7 mb-5">
 				<div class="row"style=" text-align: center;">
 					<!-- Feature item -->
-					<div class="col-sm-6 mb-5" style=" text-align: center;"> 
+					<div class="haha col-sm-6 mb-5" style=" text-align: center;"> 
 						<i class="display-6 text-primary bi bi-laptop" ></i>
 						<h5 class="text-white my-3">Digital Development</h5>
 						<p class="text-secondary">Smart use of data & technology for the automation of your business.</p>
 					</div>
 					<!-- Feature item -->
-					<div class="col-sm-6 mb-5" style=" text-align: center;">
+					<div class="haha col-sm-6 mb-5" style=" text-align: center;">
 						<i class="display-6 text-primary bi bi-bar-chart-line"></i>
 						<h5 class="text-white my-3">Online Marketing</h5>
 						<p class="text-secondary">The right mix of resources for achieving your online goals.</p>
 					</div>
 					<!-- Feature item -->
-					<div class="col-sm-6 mb-5 mb-sm-0" style=" text-align: center;">
+					<div class="haha col-sm-6 mb-5 mb-sm-0" style=" text-align: center;">
 						<i class="display-6 text-primary bi bi-shop"></i>
 						<h5 class="text-white my-3">E-Commerce Solution</h5>
 						<p class="text-secondary m-0">A scalable web shop for online sales of your product or service.</p>
 					</div>
 					<!-- Feature item -->
-					<div class="col-sm-6"style=" text-align: center;">
+					<div class=" haha col-sm-6"style=" text-align: center;">
 						<i class="display-6 text-primary bi bi-envelope-open"></i>
 						<h5 class="text-white my-3">E-mail Campaigns</h5>
 						<p class="text-secondary m-0">Effective communication campaigns that activate your target group.</p>
@@ -674,7 +702,7 @@ Portfolio START -->
 				<h2 class="display-5 mb-0 mb-sm-4 text-dark-stroke">Our Portfolio</h2>
 			</div>
 			<div class="col-sm-4 mb-4 text-start text-sm-end">
-				<a href="#" class="btn btn-line text-dark mt-3">View our work</a>
+				<a href="#" class="btn btn-line text-dark mt-3">اخر اعمالنا</a>
 			</div>
 		</div>
 		<!-- Portfolio items -->
@@ -829,14 +857,17 @@ Portfolio START -->
 </section>
 <!-- =======================
 Portfolio END -->
-
+<!-- Title -->
+<div class="col-sm-8 mb-3 mx-auto text-center pt-7">
+	<h2  class="haha display-5 mb-5 text-dark-stroke" style="color: rgb(255, 255, 255);" >Working Process</h2>
+</div>
 <!-- =======================
 Steps START -->
 <section>
 	<div class="container">
 		<div class="row">
 			<!-- Step item -->
-			<div class="col-sm-12 col-md-4 mb-5">
+			<div class="haha col-sm-12 col-md-4 mb-5">
 				<div class="text-start position-relative">
 					<h2 class="display-4 mb-0 text-light-stroke text-light-shadow">01</h2>
 					<h4 class="position-absolute start-0 top-0 mt-0 mt-sm-3 ps-6 d-block">Research and <br> analytics</h4>
@@ -847,7 +878,7 @@ Steps START -->
 				</div>
 			</div>
 			<!-- Step item -->
-			<div class="col-sm-6 col-md-4 mb-5">
+			<div class="haha col-sm-6 col-md-4 mb-5">
 				<div class="text-start position-relative">
 					<h2 class="display-4 mb-0 text-light-stroke text-light-shadow">02</h2>
 					<h4 class="position-absolute start-0 top-0 mt-0 mt-sm-3 ps-6 d-block">Design and <br> Develop</h4>
@@ -858,7 +889,7 @@ Steps START -->
 				</div>
 			</div>
 			<!-- Step item -->
-			<div class="col-sm-6 col-md-4">
+			<div class="haha col-sm-6 col-md-4">
 				<div class="text-start position-relative">
 					<h2 class="display-4 mb-0 text-light-stroke text-light-shadow">03</h2>
 					<h4 class="position-absolute start-0 top-0 mt-0 mt-sm-3 ps-6 d-block">Testing and <br> Launch</h4>
@@ -1012,7 +1043,7 @@ Action box START -->
 			<!-- Our Work Block -->
 			<div class="col-sm-6">
 				<div class="text-center bg-primary-multiply position-relative overflow-hidden px-3 py-6 h-100" >
-					<h2 class="mb-3 display-6"><a class="text-white-stroke" href="#">Our Work</a></h2>
+					<h2 class="mb-3 display-6"><a class="text-white-stroke" href="#">أعمالنا الأخيرة</a></h2>
 					<a class="btn btn-line text-white mb-0" href="#">View projects</a>
 					<img class="bg-primary-multiply position-absolute top-50 start-50 translate-middle z-index-n9" src="assets/images/about/05.jpg" alt="">
 				</div>
@@ -1021,7 +1052,7 @@ Action box START -->
 			<div class="col-sm-6">
 				<div class="text-center bg-dark px-3 py-6 h-100">
 					<h2 class="mb-3 display-6 text-white">عندك مشروع ؟</h2>
-					<a class="btn btn-line text-white mb-0" href="#">اطلب الان</a>
+					<a class="btn btn-line text-white mb-0" href="#">اطلب الآن</a>
 				</div>
 			</div>
 		</div><!-- row END -->
@@ -1035,7 +1066,7 @@ Action box START -->
 			<div class="col-12">
 				<div class="text-center">
 					<h3 class="text-white mb-5">جاهز نبدأ؟</h3>
-					<a href="#" class="display-2 text-white-stroke h2 text-uppercase">اطلب مشروعك !</a>
+					<a href="#" class="display-2 text-white-stroke h2 text-uppercase">  اطلب مشروعك الآن!</a>
 				</div>
 			</div>
 		</div>
