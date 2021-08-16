@@ -22,10 +22,38 @@
 
 	<!-- Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+	<style>
+		.haha{
+				/*
+		  All of the base styles have
+		  moved to the “CSS” tab above.
+		*/
+		transition: transform 250ms;
+		}
+		.haha:hover{
+			transform: translateY(-10px);
+	
+		}
+		.opa{
+			opacity: 1;
+	
+		}
+		.opa:hover{
+			opacity: 0.6;
+	
+		}
+		.unselectable {
+			-webkit-user-select: none;
+			-webkit-touch-callout: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			
+		  }
+	</style>
 </head>
 
-<body>
+<body   class="unselectable">
 	
 <!-- Pre loader -->
 <div class="preloader">
@@ -65,8 +93,8 @@
 			</li>
 		</ul>
 		<div class="mt-auto mb-5">
-			<a href="#" class="font-heading text-white text-primary-hover d-block mb-3">biz@divzoon.com</a>
-			<a href="#" class="font-heading text-white text-primary-hover">+(20) 01017040213</a>
+			<a href="#" class="font-heading text-white text-primary-hover d-block mb-3">divzoon@gmail.com</a>
+			<a href="https://api.whatsapp.com/message/AHLC3ZALPQP7A1" class="font-heading text-white text-primary-hover">+(20) 01017040213</a>
 		</div>
 		<!-- Offcanvas inner END -->
 	</div>
@@ -246,9 +274,10 @@ Inner intro START -->
 		<div class="row">
 			<!-- Inner intro title -->
 			<div class="col-12 my-5">
-				<h1 class="display-2 text-dark-stroke text-primary-shadow">Soon</h1>
-				<h3>Page Not Ready Yet</h3>
-				<p>Oops! The page you are looking for, Page Not Ready Yet .</p>
+				<h1 class="haha display-2 text-dark-stroke text-primary-shadow">Soon</h1>
+				<div class="opa">  <h3>Page Not Ready Yet</h3>
+				<p>Oops! The page you are looking for, Not Ready Yet .</p> </div>
+				
 			</div>
 		</div>
 	</div>
@@ -263,7 +292,7 @@ Links START -->
 		<div class="row d-flex justify-content-center">
 			<!-- item -->
 			<div class="col-md-4 col-lg-3">
-				<a href="https://divzoon.com/" class="bg-white d-block text-center p-3 mb-30 line-draw-animation">
+				<a href="index.html" class="bg-white d-block text-center p-3 mb-30 line-draw-animation">
 					<div class="line-draw-inner">
 						<span class="text-primary display-8"><i class="bi bi-house"></i></span>
 						<h5 class="my-2">Back to home</h5>
@@ -302,33 +331,26 @@ Links END -->
 Footer START -->
 <footer class="bg-dark footer-sticky pt-6">
 	<div class="container">
-		<div class="row">
+		<div class="row"  style=" text-align: center;">
 
 			<!-- Footer Widget 1 -->
-			<div class="col-md-6 col-lg-3 mb-5">
-			<img  src="assets\images\Untitled-1.png" alt="">
+			<div onClick="window.open('http://www.divzoon.com')" class="haha col-md-6 col-lg-3 mb-5">
+			<img  src="assets\images\Untitled-1.png" alt="divzoon">
 				<p>The best solution for small business.</p>
-				<div class="d-flex me-auto">
-					<h6 class="mt-2 me-4 text-white">Follow on:</h6>
-					<div class="list-group-inline list-unstyled text-primary-hover">
-						<a href="#" class="list-group-item text-white bg-transparent">Fb</a>
-						<a href="#" class="list-group-item text-white bg-transparent">Yt</a>
-						<a href="#" class="list-group-item text-white bg-transparent">Wa</a>
-					</div>
-				</div>
+				
 			</div>
 
 			<!-- Footer Widget 2 -->
 			<div class="col-md-6 col-lg-3 mb-5">
-				<h5 class="mb-4 text-white">Our offices</h5>
+				<h5 class="haha mb-4 text-white">Our offices</h5>
 				<!-- Address 1 -->
-				<h2 class="display-8 text-light-stroke">soon .</h2>
+				<h2 class="opa display-8 text-light-stroke">soon .</h2>
 
 			</div>
 
 			<!-- Footer Widget 3 -->
 			<div class="col-md-6 col-lg-3 mb-5">
-				<h5 class="mb-4 text-white">Useful links</h5>
+				<h5 class="haha mb-4 text-white">Useful links</h5>
 				<div class="row">
 					<div class="col-6">
 						<ul class="nav flex-column text-primary-hover">
@@ -343,7 +365,7 @@ Footer START -->
 							<li class="nav-item"><a class="nav-link pt-0" href="https://divzoon.com/about.html">About</a></li>
 							<li class="nav-item"><a class="nav-link" href="#">Work</a></li>
 							<li class="nav-item"><a class="nav-link" href="#">News<span class="badge bg-danger ms-2">New</span></a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -351,7 +373,7 @@ Footer START -->
 
 			<!-- Footer Widget 4 -->
 			<div class="col-md-6 col-lg-3 mb-5">
-				<h5 class="mb-4 text-white">Stay in touch</h5>
+				<h5 class="haha mb-4 text-white">Stay in touch</h5>
 				<form>
 					<label class="form-label">Subscribe to our newsletter to receive exclusive offers.</label>
 					<div class="mb-3">
@@ -377,7 +399,7 @@ Footer START -->
 			  <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
 		      <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="#">Terms</a></li>
 		      <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="privacy policy.html">Privacy</a></li>
-		      <li class="nav-item"><a class="nav-link text-body text-primary-hover pe-0" href="#">Cookies</a></li>
+		      <li class="nav-item"><a class="nav-link text-body text-primary-hover pe-0" href="Cookies.html">Cookies</a></li>
 			  </ul>
 			</div>
 		</div>
